@@ -1,0 +1,113 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666; }
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.6;
+  font-family: "CalibriRegular", sans-serif;
+  overflow-x: hidden; }
+
+/*========== Fonts CSS Start ==========*/
+@font-face {
+  font-family: "BenderBlack";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BenderBlack/BenderBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/BenderBlack/BenderBlack.woff") format("woff"), url("../fonts/BenderBlack/BenderBlack.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BenderBold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/BenderBold/BenderBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BenderBold/BenderBold.woff") format("woff"), url("../fonts/BenderBold/BenderBold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "CalibriLight";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/CalibriLight/CalibriLight.eot?#iefix") format("embedded-opentype"), url("../fonts/CalibriLight/CalibriLight.woff") format("woff"), url("../fonts/CalibriLight/CalibriLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "CalibriRegular";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/CalibriRegular/CalibriRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/CalibriRegular/CalibriRegular.woff") format("woff"), url("../fonts/CalibriRegular/CalibriRegular.ttf") format("truetype"); }
+
+/*========== Fonts CSS End ==========*/
+/*========== Custom CSS Start ==========*/
+h1 {
+  font-family: 'BenderBlack', sans-serif; }
+
+h2 {
+  font-family: 'BenderBold', sans-serif; }
+
+h3 {
+  font-family: 'CalibriLight', sans-serif; }
+
+h4 {
+  font-family: 'CalibriRegular', sans-serif; }
+
+/*========== Custom CSS End ==========*/
+/*==========  Desktop First  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /**/ }
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/ }
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  /**/ }
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  /**/ }
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/ }
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/ }
