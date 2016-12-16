@@ -1,0 +1,19 @@
+body {
+  color: #2a2a2a;
+  letter-spacing: 1px; }
+
+a {
+  color: #5e3c3e; }
+
+p,
+.s_about li {
+  color: #888; }
+
+.color_element {
+  color: #5e3c3e; }
+
+.color_bg {
+  background-color: #5e3c3e; }
+
+.color_border {
+  border-color: #5e3c3e; }
