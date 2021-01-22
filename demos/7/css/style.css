@@ -1,49 +1,49 @@
 @font-face {
   font-family: Gilroy;
-  src: url(fonts/Gilroy-Medium.eot);
-  src: url(fonts/Gilroy-Medium.eot?#iefix) format("embedded-opentype"),url(fonts/Gilroy-Medium.woff2) format("woff2"),url(fonts/Gilroy-Medium.woff) format("woff");
+  src: url(./fonts/Gilroy-Medium.eot);
+  src: url(./fonts/Gilroy-Medium.eot?#iefix) format("embedded-opentype"),url(./fonts/Gilroy-Medium.woff2) format("woff2"),url(./fonts/Gilroy-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Gilroy;
-  src: url(fonts/Gilroy-Bold.eot);
-  src: url(fonts/Gilroy-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/Gilroy-Bold.woff2) format("woff2"),url(fonts/Gilroy-Bold.woff) format("woff");
+  src: url(./fonts/Gilroy-Bold.eot);
+  src: url(./fonts/Gilroy-Bold.eot?#iefix) format("embedded-opentype"),url(./fonts/Gilroy-Bold.woff2) format("woff2"),url(./fonts/Gilroy-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Gilroy;
-  src: url(fonts/Gilroy-Regular.eot);
-  src: url(fonts/Gilroy-Regular.eot?#iefix) format("embedded-opentype"),url(fonts/Gilroy-Regular.woff2) format("woff2"),url(fonts/Gilroy-Regular.woff) format("woff");
+  src: url(./fonts/Gilroy-Regular.eot);
+  src: url(./fonts/Gilroy-Regular.eot?#iefix) format("embedded-opentype"),url(./fonts/Gilroy-Regular.woff2) format("woff2"),url(./fonts/Gilroy-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Gilroy-Regular.eot);
-  src: url(fonts/Gilroy-Regular.eot?#iefix) format("embedded-opentype"),
-      url(fonts/Roboto-Regular.woff2) format("woff2"),
-      url(fonts/Roboto-Regular.woff) format("woff");
+  src: url(./fonts/Gilroy-Regular.eot);
+  src: url(./fonts/Gilroy-Regular.eot?#iefix) format("embedded-opentype"),
+      url(./fonts/Roboto-Regular.woff2) format("woff2"),
+      url(./fonts/Roboto-Regular.woff) format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Medium.eot);
-  src: url(fonts/Roboto-Medium.eot?#iefix) format("embedded-opentype"),url(fonts/Roboto-Medium.woff2) format("woff2"),url(fonts/Roboto-Medium.woff) format("woff");
+  src: url(./fonts/Roboto-Medium.eot);
+  src: url(./fonts/Roboto-Medium.eot?#iefix) format("embedded-opentype"),url(./fonts/Roboto-Medium.woff2) format("woff2"),url(./fonts/Roboto-Medium.woff) format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap
 }
 @font-face {
   font-family: Roboto;
-  src: url(fonts/Roboto-Bold.eot);
-  src: url(fonts/Roboto-Bold.eot?#iefix) format("embedded-opentype"),url(fonts/Roboto-Bold.woff2) format("woff2"),url(fonts/Roboto-Bold.woff) format("woff");
+  src: url(./fonts/Roboto-Bold.eot);
+  src: url(./fonts/Roboto-Bold.eot?#iefix) format("embedded-opentype"),url(./fonts/Roboto-Bold.woff2) format("woff2"),url(./fonts/Roboto-Bold.woff) format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap
@@ -914,7 +914,7 @@ li.active .nav-icon {
 .login::before {
   position: absolute;
   content: '';
-  background-image: url(/img/bg-lk.png);
+  background-image: url(./img/bg-lk.png);
   background-repeat: no-repeat;
   width: 411px;
   height: 352px
@@ -1024,7 +1024,7 @@ li.active .nav-icon {
 .registration::before {
   position: absolute;
   content: '';
-  background-image: url(/img/bg-lk.png);
+  background-image: url(./img/bg-lk.png);
   background-repeat: no-repeat;
   width: 411px;
   height: 352px
@@ -1480,7 +1480,7 @@ form label {
   transform: rotate(-180deg)
 }
 .ui-widget-header .ui-icon {
-  background-image: url(/img/arrow-calendar.png)
+  background-image: url(./img/arrow-calendar.png)
 }
 .ui-datepicker-year {
   position: absolute;
@@ -1958,7 +1958,7 @@ html .ui-button.ui-state-disabled:hover {
   height: 12px;
   left: 0;
   top: 5px;
-  background-image: url(/img/list.svg);
+  background-image: url(./img/list.svg);
   background-repeat: no-repeat
 }
 .bg-light {
