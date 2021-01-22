@@ -1480,7 +1480,7 @@ form label {
   transform: rotate(-180deg)
 }
 .ui-widget-header .ui-icon {
-  background-image: url(./img/arrow-calendar.png)
+  background-image: url(../img/arrow-calendar.png)
 }
 .ui-datepicker-year {
   position: absolute;
