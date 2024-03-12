@@ -63,7 +63,10 @@
               </div>
 
               <div class="header__bottom-buttons--list">
-                <a href="/add-submission.html" class="btn">
+                <a
+                  href="https://bakhadir1988.github.io/build/add-submission.html"
+                  class="btn"
+                >
                   <span>Подать объявление</span>
                   <svg class="icon-transparent">
                     <use xlink:href="./assets/sprite.svg#icon-plus"></use>
@@ -104,11 +107,6 @@
               <use xlink:href="./assets/sprite.svg#icon-registration"></use>
             </svg>
           </div>
-          <!-- <div class="header__mobile--svg header__mobile--login">
-        <svg class="icon-transparent">
-          <use xlink:href="./assets/sprite.svg#icon-login"></use>
-        </svg>
-      </div> -->
           <div class="header__mobile--svg header__mobile--menu">
             <svg class="icon-transparent">
               <use xlink:href="./assets/sprite.svg#icon-burger"></use>
@@ -166,21 +164,21 @@
           <div class="profile">
             <div class="profile__buttons">
               <a
-                href="/contact-details.html"
+                href="https://bakhadir1988.github.io/build/contact-details.html"
                 class="btn btn__border-grey profile__tab"
                 ><span>Мой профиль</span>
                 <svg class="icon-transparent">
                   <use href="./assets/sprite.svg#icon-user"></use></svg
               ></a>
               <a
-                href="/announcements.html"
+                href="https://bakhadir1988.github.io/build/announcements.html"
                 class="btn btn__border-grey profile__tab active"
                 ><span>Мои объявления</span>
                 <svg class="icon-transparent">
                   <use href="./assets/sprite.svg#icon-board"></use></svg
               ></a>
               <a
-                href="/paid-services.html"
+                href="https://bakhadir1988.github.io/build/paid-services.html"
                 class="btn btn__border-grey profile__tab"
                 ><span>Платные услуги</span>
                 <svg class="icon-transparent">
@@ -616,6 +614,47 @@
           document.getElementById(cityName).style.display = "block";
           evt.currentTarget.className += " active";
         }
+
+        document.querySelector("#files").addEventListener("change", (e) => {
+          if (
+            window.File &&
+            window.FileReader &&
+            window.FileList &&
+            window.Blob
+          ) {
+            const files = e.target.files;
+            const output = document.querySelector("#result");
+            output.innerHTML = "";
+            let i = 0;
+            let clearTime = setInterval(() => {
+              const picReader = new FileReader();
+              picReader.addEventListener("load", function (event) {
+                const picFile = event.target;
+                const wrapper = document.createElement("div");
+                wrapper.className = "file-wrapper";
+                const img = document.createElement("img");
+                img.className = "thumbnail";
+                img.src = picFile.result;
+                wrapper.appendChild(img);
+                output.appendChild(wrapper);
+              });
+              picReader.readAsDataURL(files[i]);
+              i++;
+              i == files.length ? clearInterval(clearTime) : undefined;
+            }, 200);
+          } else {
+            alert("Your browser does not support File API");
+          }
+        });
+
+        const textarea = document.getElementById("textarea");
+        const textareaCount = document.getElementById("textareaCount");
+
+        textarea.addEventListener("input", function () {
+          const textLength = textarea.value.length;
+
+          textareaCount.innerHTML = textLength + "/100";
+        });
       </script>
     </div>
   </body>
