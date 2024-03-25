@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>urCompanySiteTemplate</title>
+  <link rel="stylesheet" href="assets/main.css">
+</head>
+
+  <body class="main-index-page">
+    <header class="header">
+  <div class="header__top">
+    <div class="container header__top-wrapper">
+      <div data-fancybox data-src="#modalRegistration" class="header__top-item">
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-registration"></use>
+        </svg>
+        <span>Регистрация</span>
+      </div>
+      <div data-fancybox data-src="#modalLogin" class="header__top-item">
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-login"></use>
+        </svg>
+        <span>Войти</span>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom">
+    <div class="container header__bottom-wrapper">
+      <div class="header__bottom-logo">
+        <a href="/"><img src="/assets/img/logo.svg" alt="Ежк-Импэкс" /></a>
+      </div>
+
+      <div class="header__bottom-info">
+        <a href="tel:+77777777777">
+          <svg class="icon-transparent">
+            <use xlink:href="/assets/sprite.svg#icon-phone"></use>
+          </svg>
+          <span>+7 777 777 77 77</span>
+        </a>
+        <a href="mailto:7777@mail.ru">
+          <svg class="icon-transparent">
+            <use xlink:href="/assets/sprite.svg#icon-email"></use>
+          </svg>
+          <span>7777@mail.ru</span>
+        </a>
+      </div>
+
+      <div class="header__bottom-buttons">
+        <a href="#" class="btn btn__default">Каталог</a>
+        <div class="header__bottom-buttons--board">
+          <div class="btn btn__border">
+            <span>Доска объявлений</span>
+            <svg class="icon-transparent">
+              <use xlink:href="/assets/sprite.svg#icon-arrow"></use>
+            </svg>
+          </div>
+
+          <div class="header__bottom-buttons--list">
+            <a href="/add-submission.html" class="btn">
+              <span>Подать объявление</span>
+              <svg class="icon-transparent">
+                <use xlink:href="/assets/sprite.svg#icon-plus"></use>
+              </svg>
+            </a>
+            <div class="btn">
+              <span>Найти объявление</span>
+              <svg class="icon-transparent">
+                <use xlink:href="/assets/sprite.svg#icon-search"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const headerBoard = document.querySelector(
+      ".header__bottom-buttons--board"
+    );
+
+    headerBoard.addEventListener("click", function () {
+      this.classList.toggle("open");
+    });
+  });
+</script>
+ <header class="header__mobile">
+  <div class="header__mobile--top">
+    <div class="container header__mobile--wrapper">
+      <a href="/" class="header__mobile--logo">
+        <img src="/assets/img/logo-mobile.svg" alt="Ежк-Импэкс" />
+      </a>
+      <a
+        class="header__mobile--svg header__mobile--phone"
+        href="tel:+77777777777"
+        ><svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-phone"></use>
+        </svg>
+        <span>+7 777 777 77 77</span></a
+      >
+      <div
+        data-fancybox
+        data-src="#tabModal"
+        class="header__mobile--svg header__mobile--registration"
+      >
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-registration"></use>
+        </svg>
+      </div>
+      <!-- <div class="header__mobile--svg header__mobile--login">
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-login"></use>
+        </svg>
+      </div> -->
+      <div class="header__mobile--svg header__mobile--menu">
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-burger"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile--bottom">
+    <div class="container header__mobile--wrapper">
+      <div class="btn btn__border">
+        <span>Подать объявление</span>
+        <svg class="icon-transparent">
+          <use xlink:href="/assets/sprite.svg#icon-plus"></use>
+        </svg>
+      </div>
+      <div class="btn btn__border header__mobile--search">
+        <span>Найти объявление</span>
+        <svg class="icon-transparent icon-search">
+          <use xlink:href="/assets/sprite.svg#icon-search"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+    <main class="main"><section class="index__title">
+  <div class="container">
+    <div class="index__title-wrapper">
+      Площадки для покупки и продажи запчастей
+
+      <span class="index__title-border"></span>
+    </div>
+  </div>
+</section>
+</main>
+
+    <footer class="footer">
+  <div class="container footer__wrapper">
+    <div class="footer-item footer-copy">© 2022 ООО ОВЗ</div>
+    <a class="footer-item footer-policy" href="#"
+      >Политика конфиденциальности</a
+    >
+    <a class="footer-item footer-email" href="mailto:7777@mail.ru">
+      <svg class="icon-transparent">
+        <use xlink:href="/assets/sprite.svg#icon-email"></use>
+      </svg>
+      <span>7777@mail.ru</span>
+    </a>
+    <a class="footer-item footer-phone" href="tel:+77777777777">
+      <svg class="icon-transparent">
+        <use xlink:href="/assets/sprite.svg#icon-phone"></use>
+      </svg>
+      <span>+7 777 777 77 77</span>
+    </a>
+  </div>
+</footer>
+
+<!-- modals -->
+
+<!-- Форма регистрации -->
+<div id="modalRegistration" class="modal">
+  <div class="modal__title">Регистрация</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="text" id="company" required />
+    <label for="company">Название компании <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="text" id="email" required />
+    <label for="email">E-mail <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="text" id="inn" required />
+    <label for="inn">ИНН <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="password" required />
+    <label for="password">Пароль<span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="passwordRepeat" required />
+    <label for="passwordRepeat">Повторите пароль <span>*</span></label>
+  </div>
+  <div class="modal__form--policy">
+    Проходя регистрацию вы соглашаетесь на
+    <a href="#"> обработку персональных данных</a>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Зарегистрироваться</button>
+  </div>
+</form>
+
+</div>
+<!-- Подтверждение регистрации -->
+<div id="modalRegistrationСonfirmation" class="modal">
+  <div class="modal__title">Регистрация</div>
+<form class="modal__form">
+  <p>
+    На указанный вами E-mail отправлено письмо для подтверждения регистрации.
+  </p>
+
+  <p>
+    Если вы не получили письмо проверьте папку “Спам” или запросите новое
+    письмо.
+  </p>
+  <div class="modal__form--link">
+    <a href="#">Запросить новое письмо</a>
+  </div>
+</form>
+
+</div>
+<!-- Восстановление пароля -->
+<div id="passwordRecovery" class="modal">
+  <div class="modal__title">Восстановление пароля</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="text" id="email" required />
+    <label for="email">E-mail <span>*</span></label>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Отправить</button>
+  </div>
+</form>
+
+</div>
+<!-- Подтверждение восстановление пароля -->
+<div id="passwordRecoveryСonfirmation" class="modal">
+  <div class="modal__title">Восстановление пароля</div>
+<form class="modal__form">
+  <p>
+    На указанный вами E-mail отправлено письмо для подтверждения регистрации.
+  </p>
+
+  <p>
+    Если вы не получили письмо проверьте папку “Спам” или запросите новое
+    письмо.
+  </p>
+  <div class="modal__form--link">
+    <a href="#">Запросить новое письмо</a>
+  </div>
+</form>
+
+</div>
+<!-- Форма входа -->
+<div id="modalLogin" class="modal">
+  <div class="modal__title">Вход</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="text" id="name" required />
+    <label for="name">Логин</label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="password" required />
+    <label for="password">Пароль</label>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Зарегистрироваться</button>
+  </div>
+  <div class="modal__form--link">
+    <a href="#">Забыли пароль?</a>
+  </div>
+</form>
+
+</div>
+<!-- Форма изменить пароль -->
+<div id="modalChangePassword" class="modal">
+  <div class="modal__title">Изменить пароль</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="password" id="passwordOld" required />
+    <label for="passwordOld">Старый пароль<span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="password" required />
+    <label for="password">Новый пароль <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="passwordRepeat" required />
+    <label for="passwordRepeat">Повторите пароль <span>*</span></label>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Зарегистрироваться</button>
+  </div>
+  <div class="modal__form--link">
+    <a href="#">Забыли пароль?</a>
+  </div>
+</form>
+
+</div>
+<!-- Подтверждение изменения пароля  -->
+<div id="passwordRecoveryСonfirmation" class="modal">
+  <div class="modal__title">Смена пароля</div>
+<form class="modal__form">
+  <p>
+    На указанный вами E-mail отправлено письмо для подтверждения регистрации.
+  </p>
+
+  <p>
+    Если вы не получили письмо проверьте папку “Спам” или запросите новое
+    письмо.
+  </p>
+  <div class="modal__form--link">
+    <a href="#">Запросить новое письмо</a>
+  </div>
+</form>
+
+</div>
+<!-- Форма удаления профиля  -->
+<div id="deleteProfile" class="modal">
+  <div class="modal__title">Удаление профиля</div>
+<form class="modal__form">
+  <p>Подтвердите удаление профиля и всех объявлений</p>
+  <p>Восстановить профиль в дальнейшем будет невозможно</p>
+  <div class="modal__form--button">
+    <button class="btn btn__border" type="submit">Отмена</button>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Удалить профиль</button>
+  </div>
+</form>
+
+</div>
+
+<div id="tabModal" class="modal modal__tabs">
+  <div class="modal__tabs--list">
+  <button
+    class="btn modal__tabs--list-item active"
+    onclick="openCity(event, 'tabRegistration')"
+  >
+    Регистрация
+  </button>
+  <button
+    class="btn modal__tabs--list-item"
+    onclick="openCity(event, 'tabLogin')"
+  >
+    Вход
+  </button>
+</div>
+
+<div
+  id="tabRegistration"
+  class="modal__tabs--content active"
+  style="display: block"
+>
+  <div class="modal__title">Регистрация</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="text" id="company" required />
+    <label for="company">Название компании <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="text" id="email" required />
+    <label for="email">E-mail <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="text" id="inn" required />
+    <label for="inn">ИНН <span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="password" required />
+    <label for="password">Пароль<span>*</span></label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="passwordRepeat" required />
+    <label for="passwordRepeat">Повторите пароль <span>*</span></label>
+  </div>
+  <div class="modal__form--policy">
+    Проходя регистрацию вы соглашаетесь на
+    <a href="#"> обработку персональных данных</a>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Зарегистрироваться</button>
+  </div>
+</form>
+
+</div>
+
+<div id="tabLogin" class="modal__tabs--content">
+  <div class="modal__title">Вход</div>
+<form class="modal__form">
+  <div class="modal__form--item">
+    <input type="text" id="name" required />
+    <label for="name">Логин</label>
+  </div>
+  <div class="modal__form--item">
+    <input type="password" id="password" required />
+    <label for="password">Пароль</label>
+  </div>
+  <div class="modal__form--button">
+    <button class="btn btn__default" type="submit">Зарегистрироваться</button>
+  </div>
+  <div class="modal__form--link">
+    <a href="#">Забыли пароль?</a>
+  </div>
+</form>
+
+</div>
+
+<script>
+  function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, modalitem;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("modal__tabs--content");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="modalitem" and remove the class "active"
+    modalitem = document.getElementsByClassName("modal__tabs--list-item");
+    for (i = 0; i < modalitem.length; i++) {
+      modalitem[i].className = modalitem[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+
+</div>
+
+  </body>
+
+  <script defer src="assets/bundle.js"></script>
+</html>
