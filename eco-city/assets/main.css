@@ -1073,7 +1073,7 @@ input[type="radio"] {
 }
 
 .branches {
-  background-image: url("./assets/img/map-bg.png");
+  background-image: url("../assets/img/map-bg.png");
   background-position: 0 100%;
   background-repeat: no-repeat;
   padding-top: 0;
