@@ -917,7 +917,7 @@ p:last-child {
 .fill__form-list--form {
   padding: 60px 90px;
   border-radius: var(--border-radius);
-  background-image: url("./assets/img/bg-form.png");
+  background-image: url("../assets/img/bg-form.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
