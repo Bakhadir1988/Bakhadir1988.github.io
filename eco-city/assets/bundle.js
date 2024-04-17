@@ -82,7 +82,6 @@ function init() {
   ];
 
   for (let i = 0; i < coords.length; i++) {
-    console.log("first", i);
     let placemark = new ymaps.Placemark(
       coords[i],
       {},
