@@ -939,7 +939,7 @@ p:last-child {
   display: none;
 }
 .fill__form--agreement input:checked + label {
-  background-image: url("./assets/img/check.svg");
+  background-image: url("../assets/img/check.svg");
   background-position: center;
 }
 .fill__form--agreement label {
